@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تعرف على القصة الحقيقية وراء كل منتج">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/Q7RAXb8LHAiSwhAaMgWiQieF-_aH-MRnHtpEpcPcqostQUmNRXVKjjFMqdTpn052FGav" type="image/png">
+    <title>حكاية المنتجات</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-section {
+            background: url('https://th.bing.com/th/id/OIP.cZoDk9ukg5veAyDWURD8xgHaE7?w=626&h=417&rs=1&pid=ImgDetMain') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: brightness(60%);
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            padding: 12px 25px;
+            background-color: #e57c4b;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #d76b39;
+            transform: scale(1.1);
+        }
+
+        .dropdown {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        .dropdown button {
+            padding: 15px 30px;
+            width: 100%;
+            background-color: #a17848;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown button:hover {
+            background-color: #8b6c48;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .section {
+            margin-top: 50px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #4b2e2c;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Add styles for product images */
+        .product-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .product-image {
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #755a3a;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>اكتشف حكايات المنتجات</h1>
+        </div>
+
+        <!-- Dropdown for Product Names -->
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">اختار منتجًا لقراءة حكاية</button>
+            <div class="dropdown-content" id="product-dropdown">
+                <a href="#" onclick="showStory('product1')">منتج 1</a>
+                <a href="#" onclick="showStory('product2')">منتج 2</a>
+                <a href="#" onclick="showStory('product3')">منتج 3</a>
+            </div>
+        </div>
+
+        <!-- Story Section -->
+        <div class="section" id="story-section">
+            <h2>حكاية المنتج</h2>
+            <div id="product-info" class="product-content">
+                <p id="story-content">اختر منتجًا من القائمة لقراءة الحكاية</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 حكاية منتج جميع الحقوق محفوظة</p><br>
+
+            <p>تابعنا على لمعرفة المزيد:<p><br>
+            <div>
+                <a href="http://www.facebook.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40" height="40">
+                </a>
+                <a href="http://www.instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40" height="40">
+                </a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Toggle the dropdown
+        function toggleDropdown() {
+            var dropdown = document.getElementById("product-dropdown");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+
+        // Show the selected product's story and image
+        function showStory(product) {
+            var storyContent = "";
+            var productImage = "";
+
+            // Hide the dropdown once a product is selected
+            document.getElementById("product-dropdown").style.display = "none";
+
+            // Define the story and image for each product
+            if (product === 'product1') {
+                storyContent = "حكاية منتج 1: بدأ كفكرة بسيطة لتسهيل حياة الناس. بعد عدة محاولات وتجارب، تم تصميم المنتج الذي حقق نجاحًا كبيرًا في السوق.";
+                productImage = "https://c.pxhere.com/photos/d3/46/light_darkness_burns_candles-1032264.jpg!d"; // Example Image for Product 1
+            } else if (product === 'product2') {
+                storyContent = "حكاية منتج 2: هذا المنتج كان نتيجة شراكة مع خبراء في المجال التقني، حيث تم تطويره بشكل متقدم ليواكب احتياجات العصر.";
+                productImage = "https://th.bing.com/th/id/OIP.mgTzAkYcm7t31j-j9QEO9wHaLH?w=1000&h=1500&rs=1&pid=ImgDetMain"; // Example Image for Product 2
+            } else if (product === 'product3') {
+                storyContent = "حكاية منتج 3: تم تصميم هذا المنتج باستخدام مواد مستدامة، وقد تم إطلاقه مع حملة توعية للتقليل من الأثر البيئي.";
+                productImage = "https://th.bing.com/th/id/R.703ae9228effa53da7ad01005648871e?rik=AKGU7CRHzQ7I2Q&riu=http%3a%2f%2fwww.twisted-willows.com%2fwp-content%2fuploads%2f2014%2f09%2f6666046291_e15f7c5eab_z.jpg&ehk=GeN4GZlxQkeOJV2Jjc0gKPA79G%2bWytvHvX01pIWGXH4%3d&risl=&pid=ImgRaw&r=0"; // Example Image for Product 3
+            }
+
+            // Display the selected product's story and image
+            var productInfo = document.getElementById("product-info");
+            productInfo.innerHTML = `
+                <img src="${productImage}" alt="Product Image" class="product-image">
+                <p id="story-content">${storyContent}</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
