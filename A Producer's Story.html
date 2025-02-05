@@ -1,172 +1,174 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="تعرف على القصة الحقيقية وراء المنتج الفريد وكيف غيّر حياتنا.">
-    <link rel="icon" href="https://play-lh.googleusercontent.com/Q7RAXb8LHAiSwhAaMgWiQieF-_aH-MRnHtpEpcPcqostQUmNRXVKjjFMqdTpn052FGav" type="image/png">
-    <title>A Producer's Story</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-            direction: rtl;
-        }
+/* تحسين تنسيق الصفحة للجوال */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .hero-section {
-            background: url('https://th.bing.com/th/id/OIP.cZoDk9ukg5veAyDWURD8xgHaE7?w=626&h=417&rs=1&pid=ImgDetMain') no-repeat center center;
-            background-size: cover;
-            height: 600px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.5s ease;
-        }
+/* تحسين الحاوية */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-        .hero-section:hover {
-            transform: scale(1.05);
-        }
+/* تعديل قسم hero section */
+.hero-section {
+    background: url('https://th.bing.com/th/id/OIP.cZoDk9ukg5veAyDWURD8xgHaE7?w=626&h=417&rs=1&pid=ImgDetMain') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
 
-        .hero-content {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 40px;
-            border-radius: 10px;
-        }
+.hero-section:hover {
+    transform: scale(1.05);
+}
 
-        .hero-content h1 {
-            font-size: 40px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
 
-        .hero-content p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
 
-        .cta-button {
-            padding: 12px 25px;
-            background-color: #e57c4b;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
 
-        .cta-button:hover {
-            background-color: #d76b39;
-        }
+/* زر CTA */
+.cta-button {
+    padding: 12px 25px;
+    background-color: #e57c4b;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-        .section {
-            margin-top: 50px;
-        }
+.cta-button:hover {
+    background-color: #d76b39;
+}
 
-        .section h2 {
-            font-size: 28px;
-            color: #4b2e2c;
-            text-align: center;
-            margin-bottom: 30px;
-        }
+/* أقسام أخرى */
+.section {
+    margin-top: 50px;
+}
 
-        .section p {
-            font-size: 18px;
-            color: #333;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
+.section h2 {
+    font-size: 28px;
+    color: #4b2e2c;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #4b2e2c;
-            color: white;
-            margin-top: 50px;
-        }
+.section p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
 
-        footer p {
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4b2e2c;
+    color: white;
+    margin-top: 50px;
+}
 
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <div class="hero-content">
-                <h1>حكاية منتج</h1>
-                <p>رحلة طويلة بدأت بفكرة صغيرة وانتهت بابتكار غيّر العالم. تعرف على القصة وراء هذا المنتج المميز.</p>
-               <div>
-                <a href="discover imege.html" class="cta-button">القي نظرة </a>
-               </div>
-               
-            </div>
-        </div>
+footer p {
+    margin: 0;
+}
 
-        <!-- Story Section -->
-        <div class="section" id="story">
-            <h2>البداية: من فكرة إلى منتج</h2>
-            <p>
-                كانت البداية بفكرة بسيطة – كيف يمكن تحسين حياة الناس من خلال منتج مبتكر؟ بدأ فريقنا بالبحث والتطوير، متحدين التحديات من أجل إنتاج شيء يتجاوز التوقعات. كانت الليالي الطويلة والعمل الشاق هو ما دفعنا للاستمرار.
-            </p>
-            <p>
-                بعد عدة محاولات وتجارب، أطلقنا أول نسخة من المنتج الذي تم تحسينه مع مرور الوقت. اليوم، أصبح هذا المنتج جزءًا من حياة الكثيرين، حيث يساهم في تسهيل حياتهم اليومية.
-            </p>
-        </div>
+/* تحسين العرض على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    /* تحسين حجم النصوص */
+    .hero-content h1 {
+        font-size: 32px;
+    }
 
-        <!-- The Impact of the Product -->
-        <div class="section">
-            <h2>أثر المنتج في حياة الناس</h2>
-            <p>
-                مع مرور الوقت، أصبح هذا المنتج ليس فقط خيارًا مفضلًا، بل أصبح رمزًا للإبداع والاستدامة. تأثيره لم يقتصر فقط على تحسين الحياة الشخصية بل امتد ليشمل المجتمعات المحلية والبيئة. في كل زاوية من العالم، يساهم المنتج في تمكين الناس وتحقيق النجاح.
-            </p>
-            <p>
-                كنا نعلم أن التغيير يبدأ من الداخل، ولذلك حرصنا على التأكد من أن عملية الإنتاج تكون مستدامة وصديقة للبيئة، وذلك عبر استخدام المواد المعاد تدويرها والعمل مع شركاء يؤمنون بنفس قيمنا.
-            </p>
-        </div>
+    .hero-content p {
+        font-size: 18px;
+    }
 
-        <!-- Call to Action -->
-        <div class="section" style="text-align: center;">
-            <h2>هل أنت مستعد لتجربة التغيير؟</h2>
-            <p>
-                انضم إلى آلاف المستخدمين الذين اختاروا هذا المنتج لتحسين حياتهم. لا تنتظر أكثر، اكتشف كيف يمكن أن يساعدك في تحقيق أهدافك.
-            </p>
-            <p>
-                اكتشف الان الحكاية وراء المنتجات والقصص المبتكرة وراء كلاً منها 
-            </p>
-            <a href="discover A product story.html" class="cta-button">اكتشف الآن</a>
-        </div>
-        
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2025 حكاية منتج جميع الحقوق محفوظة</p><br>
-            <p>تابعنا لمعرفة المزيد:</p><br>
-            <div>
-                <a href="http://www.facebook.com" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40" height="40">
-                </a>
-                <a href="http://www.instagram.com" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40" height="40">
-                </a>
-            </div>
-        </footer>
+    /* تعديل المسافات */
+    .section h2 {
+        font-size: 24px;
+    }
 
-    </div>
+    .section p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 
-</body>
-</html>
+    /* إعادة ترتيب الأيقونات في الفوتر */
+    footer div {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    footer a {
+        margin: 0 10px;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* تحسين العرض على الشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+    /* تحسين الحاوية */
+    .container {
+        padding: 15px;
+    }
+
+    /* تحسين النصوص والعناصر الأخرى */
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
