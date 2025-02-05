@@ -25,7 +25,7 @@
         .hero-section {
             background: url('https://th.bing.com/th/id/OIP.cZoDk9ukg5veAyDWURD8xgHaE7?w=626&h=417&rs=1&pid=ImgDetMain') no-repeat center center;
             background-size: cover;
-            height: 500px;
+            height: 300px;
             border-radius: 10px;
             color: white;
             text-align: center;
@@ -36,7 +36,7 @@
         }
 
         .hero-section h1 {
-            font-size: 48px;
+            font-size: 32px;
             font-weight: bold;
         }
 
@@ -110,7 +110,7 @@
         }
 
         .section h2 {
-            font-size: 28px;
+            font-size: 24px;
             color: #4b2e2c;
             text-align: center;
             margin-bottom: 30px;
@@ -118,22 +118,22 @@
         }
 
         .section p {
-            font-size: 18px;
+            font-size: 16px;
             color: #333;
             line-height: 1.6;
             margin-bottom: 30px;
         }
 
-        /* Add styles for product images */
         .product-content {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             gap: 20px;
         }
 
         .product-image {
-            max-width: 400px;
+            max-width: 100%;
+            height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -150,6 +150,29 @@
             margin: 0;
         }
 
+        /* Responsive design for small screens */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 24px;
+            }
+
+            .cta-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .dropdown button {
+                font-size: 18px;
+            }
+
+            .product-image {
+                max-width: 80%;
+            }
+        }
     </style>
 </head>
 <body>
