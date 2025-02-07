@@ -91,14 +91,28 @@
             padding: 0 15px;
         }
 
-        /* استعلامات الوسائط لتحسين العرض على الأجهزة الصغيرة */
-        @media (max-width: 768px) {
+        /* تحسين التفاعل على الأجهزة المحمولة */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 1.8rem; /* تقليل حجم العنوان على الجوال */
+                margin-bottom: 30px;
+            }
+
             .gallery-item {
-                height: 200px; /* تقليل ارتفاع الصور على الأجهزة الصغيرة */
+                height: 250px; /* تقليل حجم الصور في الجوال */
             }
 
             .overlay-text {
-                font-size: 18px; /* تقليل حجم النص على الأجهزة الصغيرة */
+                font-size: 18px; /* تصغير النص في الجوال */
+            }
+
+            /* استخدام صف واحد للصور على الجوال */
+            .col-12 {
+                padding: 10px 0;
+            }
+
+            .gallery-item img {
+                height: 200px; /* تغيير حجم الصورة على الجوال */
             }
         }
     </style>
@@ -109,7 +123,7 @@
         <h1>معرض الصور</h1>
         <div class="row">
             <!-- First Image -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 col-12 mb-4">
                 <div class="gallery-item">
                     <img src="https://th.bing.com/th/id/OIP.g0Gh5s4BFpJAx_m7XKDWPQHaEJ?rs=1&pid=ImgDetMain" alt="Image 1" class="img-fluid">
                     <div class="overlay">
@@ -118,7 +132,7 @@
                 </div>
             </div>
             <!-- Second Image -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 col-12 mb-4">
                 <div class="gallery-item">
                     <img src="https://th.bing.com/th/id/OIP.YyPmssdLZOyMuQNjUfztswHaE1?rs=1&pid=ImgDetMain" alt="Image 2" class="img-fluid">
                     <div class="overlay">
@@ -127,7 +141,7 @@
                 </div>
             </div>
             <!-- Third Image -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 col-12 mb-4">
                 <div class="gallery-item">
                     <img src="https://th.bing.com/th/id/OIP.RNlxMU_Z2bqU8s6c1Kv3IAHaE8?rs=1&pid=ImgDetMain" alt="Image 3" class="img-fluid">
                     <div class="overlay">
@@ -136,7 +150,7 @@
                 </div>
             </div>
             <!-- Fourth Image -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 col-12 mb-4">
                 <div class="gallery-item">
                     <img src="https://i.ytimg.com/vi/oUvqj0juwwk/maxresdefault.jpg" alt="Image 4" class="img-fluid">
                     <div class="overlay">
@@ -145,7 +159,7 @@
                 </div>
             </div>
             <!-- Fifth Image -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 col-12 mb-4">
                 <div class="gallery-item">
                     <img src="https://th.bing.com/th/id/OIP.1POVOCQ7pPC7fWEPDwgMuAHaDh?rs=1&pid=ImgDetMain" alt="Image 5" class="img-fluid">
                     <div class="overlay">
@@ -154,7 +168,7 @@
                 </div>
             </div>
             <!-- Sixth Image -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 col-12 mb-4">
                 <div class="gallery-item">
                     <img src="https://th.bing.com/th/id/OIP.wNQhdTVyOLpqLm5RHJ7UQQHaFS?rs=1&pid=ImgDetMain" alt="Image 6" class="img-fluid">
                     <div class="overlay">
