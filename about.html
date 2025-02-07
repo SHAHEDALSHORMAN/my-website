@@ -1,146 +1,153 @@
-/* استيراد الخطوط */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap');
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A New Story Begins</title>
+    <style>
+        /* استيراد الخطوط */
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap');
 
-/* تنسيق عام للصفحة */
-body {
-    font-family: 'Cairo', sans-serif;
-    direction: rtl;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('https://th.bing.com/th/id/OIP.nYykgFMN4RO_7b7Ben40zQHaHa?w=500&h=500&rs=1&pid=ImgDetMain') no-repeat center center fixed;
-    background-size: cover; /* يغطي الصورة كامل الصفحة */
-    color: #000000; /* تغيير لون النص إلى الأسود */
-    text-align: center;
-    overflow: hidden;
-}
+        /* تنسيق عام للصفحة */
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://www.bing.com/images/blob?bcid=RG0E-OA2yxAIqxcxoNWLuD9SqbotqVTdP5I') no-repeat center center fixed;
+            background-size: cover; /* يغطي الصورة كامل الصفحة */
+            color: #000000; /* تغيير لون النص إلى الأسود */
+            text-align: center;
+            overflow: hidden;
+        }
 
-/* الحاوية الرئيسية */
-.container {
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 90%; /* يمكن تعديل عرض الحاوية */
-    margin: 0;
-    text-align: center;
-    background-color: hsla(34, 29%, 49%, 0.8); /* لون القهوة الشقراء الفاتح مع شفافية */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-}
+        /* الحاوية الرئيسية */
+        .container {
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%; /* يمكن تعديل عرض الحاوية */
+            margin: 0;
+            text-align: center;
+            background-color: hsla(34, 29%, 49%, 0.8); /* لون القهوة الشقراء الفاتح مع شفافية */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
 
-.container:hover {
-    transform: scale(1.02);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
 
-/* العناوين */
-h2 {
-    color: #000000; /* تغيير لون العنوان إلى الأسود */
-    font-size: 30px;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-}
+        /* العناوين */
+        h2 {
+            color: #000000; /* تغيير لون العنوان إلى الأسود */
+            font-size: 30px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
 
-/* الفقرات */
-p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #000000; /* تغيير لون الفقرات إلى الأسود */
-    margin-bottom: 15px;
-    transition: color 0.3s ease;
-}
+        /* الفقرات */
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #000000; /* تغيير لون الفقرات إلى الأسود */
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
 
-p:hover {
-    color: #6F4E37; /* إبقاء تأثير تغيير اللون عند التمرير */
-}
+        p:hover {
+            color: #6F4E37; /* إبقاء تأثير تغيير اللون عند التمرير */
+        }
 
-/* إبراز النص */
-strong {
-    color: #6F4E37;
-    font-weight: bold;
-}
+        /* إبراز النص */
+        strong {
+            color: #6F4E37;
+            font-weight: bold;
+        }
 
-/* زر الاستكشاف */
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background-color: #6F4E37;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 25px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s;
-    cursor: pointer;
-}
+        /* زر الاستكشاف */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #6F4E37;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease-in-out, transform 0.2s;
+            cursor: pointer;
+        }
 
-.btn:hover {
-    background-color: #5A3C2C;
-    transform: scale(1.05);
-}
+        .btn:hover {
+            background-color: #5A3C2C;
+            transform: scale(1.05);
+        }
 
-/* تحسين التصميم للأجهزة الصغيرة */
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
-    }
+        /* تحسين التصميم للأجهزة الصغيرة */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                font-size: 16px; /* تحسين حجم النص */
+            }
 
-    h2 {
-        font-size: 24px;
-    }
+            h2 {
+                font-size: 24px;
+            }
 
-    p {
-        font-size: 16px;
-    }
+            p {
+                font-size: 14px; /* تقليل حجم النص على الجوال */
+                line-height: 1.6;
+            }
 
-    .btn {
-        font-size: 16px;
-        padding: 10px 25px;
-    }
-}
+            .btn {
+                font-size: 16px;
+                padding: 10px 25px;
+            }
+        }
 
-/* تأثيرات النص عند التمرير */
-.container h2, .container p {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-}
+        /* تأثيرات النص عند التمرير */
+        .container h2, .container p {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
 
-.container h2 {
-    animation-delay: 0.3s;
-}
+        .container h2 {
+            animation-delay: 0.3s;
+        }
 
-.container p {
-    animation-delay: 0.5s;
-}
+        .container p {
+            animation-delay: 0.5s;
+        }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-/* تحسين العرض على الشاشات الصغيرة جدًا */
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-    }
+    </style>
+</head>
+<body>
 
-    h2 {
-        font-size: 20px;
-    }
+    <div class="container"><br><br>
+        <h2>🌿☕ من بقايا القهوة… تبدأ حكايتنا! ☕🌿</h2>
+        <p>في كل صباح، تبدأ القصة مع فنجان قهوة دافئ، لكن ماذا لو لم تكن هذه النهاية؟ ماذا لو تحولت تلك الحبوب المطحونة التي نلقيها يوميًا إلى بداية جديدة؟</p>
+        <p>هكذا وُلدت فكرتنا! رؤية تحوّل مخلفات القهوة إلى منتجات مبتكرة تحمل الحياة في تفاصيلها—من وقود حيوي يضيء المستقبل، إلى زيوت ومستحضرات تجميل تغذي الجمال، وعطور تحمل رائحة الدفء، وحتى أقمشة تعيد تعريف الموضة المستدامة.</p>
+        <p><strong style="color: #4B2E2E;">مع كل كوب قهوة، نحن لا نصنع بقايا… بل نصنع فرصًا!</strong></p>
 
-    p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-}
+        <h2>🌿☕ From Coffee Waste… A New Story Begins! ☕🌿</h2>
+        <p>Every morning, our story begins with a warm cup of coffee. But what if that wasn’t the end? What if the used coffee grounds we throw away every day became the start of something new?</p>
+        <p>This is where our vision was born! A concept that transforms coffee waste into innovative products full of life—biofuel that powers the future, oils and cosmetics that nourish beauty, fragrances that capture warmth, and even textiles that redefine sustainable fashion.</p>
+        <p><strong style="color: #4B2E2E;">With every cup of coffee, we’re not creating waste… we’re creating opportunities!</strong></p><br>
+    </div>
+    
+</body>
+</html>
