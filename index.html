@@ -49,12 +49,12 @@
 
         /* تخصيص القائمة العلوية وجعلها شفافة */
         .navbar {
-            background: transparent !important; /* جعل الخلفية شفافة */
-            position: absolute; /* جعلها تظهر فوق الصورة */
+            background: transparent !important;
+            position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 3; /* جعلها أعلى من محتوى الصورة */
+            z-index: 3;
         }
 
         /* تخصيص النصوص داخل القائمة */
@@ -65,7 +65,7 @@
 
         /* تنسيق الأقسام */
         .section {
-            padding: 50px 0; /* زيادة الحشو */
+            padding: 50px 0;
             text-align: center;
         }
 
@@ -74,12 +74,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 30vh;  /* جعل الارتفاع 100% من الشاشة */
+            height: 30vh;
             text-align: center;
         }
 
         .centered-section .col-md-6 {
-            width: 50%; /* تعديل العرض ليكون مناسباً */
+            width: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             transition: transform 0.3s ease-in-out;
@@ -91,21 +91,21 @@
 
         /* تكبير الأعمدة */
         .col-md-6 {
-            padding: 30px; /* زيادة الحشو داخل الأعمدة */
-            margin-bottom: 10px; /* مسافة إضافية بين الأعمدة */
-            border-radius: 10px; /* إضافة حواف دائرية */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل للأعمدة */
-            transition: transform 0.3s ease-in-out; /* تأثير عند التحويم */
+            padding: 30px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
 
         /* تأثير التحويم */
         .col-md-6:hover {
-            transform: scale(1.05); /* تكبير العمود عند التحويم */
+            transform: scale(1.05);
         }
 
         .brown-text {
-            color: #6A4E23;  /* لون بني */
-            text-decoration: none; 
+            color: #6A4E23;
+            text-decoration: none;
         }
 
         /* تنسيق الفوتر */
@@ -116,11 +116,40 @@
             text-align: center;
         }
 
-        /* جعل الأعمدة تتناسب مع الشاشات الصغيرة */
-        @media (max-width: 768px) {
+        /* تحسين التصفح في الجوال */
+        @media (max-width: 767px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+
+            .section .container {
+                padding: 0 15px;
+            }
+
             .centered-section .col-md-6 {
-                width: 100%; /* جعل الأعمدة تأخذ العرض الكامل */
-                margin-bottom: 20px; /* إضافة مسافة بين الأعمدة */
+                width: 80%;
+            }
+
+            .navbar-toggler {
+                border: none;
+            }
+
+            .navbar-collapse {
+                text-align: right;
+            }
+
+            .col-md-6 {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            footer {
+                font-size: 0.9rem;
+                padding: 10px;
             }
         }
     </style>
@@ -171,10 +200,10 @@
     <!-- قسم حِرفة وكوب في منتصف الصفحة -->
     <section class="centered-section">
         <div class="col-md-6" style="background: url('https://img.freepik.com/premium-photo/3d-small-business-modern-store-aigenerated_610906-224.jpg?w=2000') no-repeat center center; background-size: cover;">
-        <div style="background-color: #D2B48C; padding: 5px; border-radius: 10px;">
-            <h3><a href="shop.html" class="brown-text">حِرفة وكوب</a></h3>
-            <p>متجرنا يجمع بين الفن الحرفي ومتعة القهوة , حيث يلتقي الابداع بالدفء في تجربة فريدة</p>
-        </div>
+            <div style="background-color: #D2B48C; padding: 5px; border-radius: 10px;">
+                <h3><a href="shop.html" class="brown-text">حِرفة وكوب</a></h3>
+                <p>متجرنا يجمع بين الفن الحرفي ومتعة القهوة , حيث يلتقي الابداع بالدفء في تجربة فريدة</p>
+            </div>
         </div>
     </section>
 
