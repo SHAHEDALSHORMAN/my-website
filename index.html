@@ -8,14 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* تعيين الخط */
         body {
             font-family: 'Cinzel', serif;
             background-color: #f8f4ec;
             color: #3a2d27;
         }
 
-        /* تعيين صورة الخلفية */
         .hero {
             background: url('https://th.bing.com/th/id/OIP.Ics5ESgl8xFs1x5Xdh4-zQAAAA?rs=1&pid=ImgDetMain') no-repeat center center;
             background-size: cover;
@@ -28,7 +26,6 @@
             color: white;
         }
 
-        /* طبقة شفافة فوق الخلفية */
         .overlay {
             position: absolute;
             top: 0;
@@ -38,7 +35,6 @@
             background: rgba(0, 0, 0, 0.5);
         }
 
-        /* تنسيق النصوص داخل الخلفية */
         .hero-content {
             position: relative;
             z-index: 2;
@@ -47,7 +43,6 @@
             border-radius: 10px;
         }
 
-        /* تخصيص القائمة العلوية وجعلها شفافة */
         .navbar {
             background: transparent !important;
             position: absolute;
@@ -57,19 +52,16 @@
             z-index: 3;
         }
 
-        /* تخصيص النصوص داخل القائمة */
         .navbar a {
             color: white !important;
             font-weight: bold;
         }
 
-        /* تنسيق الأقسام */
         .section {
             padding: 50px 0;
             text-align: center;
         }
 
-        /* تخصيص الصف (قسم حِرفة وكوب) ليظهر في المنتصف */
         .centered-section {
             display: flex;
             justify-content: center;
@@ -89,26 +81,11 @@
             transform: scale(1.05);
         }
 
-        /* تكبير الأعمدة */
-        .col-md-6 {
-            padding: 30px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        /* تأثير التحويم */
-        .col-md-6:hover {
-            transform: scale(1.05);
-        }
-
         .brown-text {
             color: #6A4E23;
             text-decoration: none;
         }
 
-        /* تنسيق الفوتر */
         footer {
             background: #573f20;
             color: white;
@@ -116,7 +93,6 @@
             text-align: center;
         }
 
-        /* تحسين التصفح في الجوال */
         @media (max-width: 767px) {
             .hero h1 {
                 font-size: 2rem;
@@ -163,6 +139,27 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="explor.html">استكشف المزيد</a>
+                    </li>
+                    <!-- قائمة المزيد -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            المزيد
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="about.html">من نحن</a></li>
+                            <li><a class="dropdown-item" href="A Producer's Story.html">حكاية منتج</a></li>
+                            <li><a class="dropdown-item" href="shop.html">حِرفة وكوب</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -179,17 +176,15 @@
     <section class="section bg-light">
         <div class="container">
             <div class="row">
-                <!-- من نحن -->
                 <div class="col-md-6" style="background: url('https://th.bing.com/th/id/OIP.pSt3PncBbDl2F8Xi3LQm6gHaEG?rs=1&pid=ImgDetMain') no-repeat center center; background-size: cover;">
                     <div style="background-color: #D2B48C; padding: 5px; border-radius: 10px;">
                         <h3><a href="about.html" class="brown-text">من نحن</a></h3>
                         <p>تعرف على قصة المكان الذي يجمع بين الفن والقهوة</p>
                     </div>
                 </div>
-                <!-- ورش العمل -->
                 <div class="col-md-6" style="background: url('https://th.bing.com/th/id/OIP.cZoDk9ukg5veAyDWURD8xgHaE7?w=626&h=417&rs=1&pid=ImgDetMain') no-repeat center center; background-size: cover;">
                     <div style="background-color: #D2B48C; padding: 5px; border-radius: 10px;">
-                        <h3><a href="A Producer's Story.html" class="brown-text">حكاية منتج </a></h3>
+                        <h3><a href="A Producer's Story.html" class="brown-text">حكاية منتج</a></h3>
                         <p>لان وراء كل منتج حكاية....اكتشف القصة وراء كل منتج</p>
                     </div>
                 </div>
@@ -197,7 +192,6 @@
         </div>
     </section>
 
-    <!-- قسم حِرفة وكوب في منتصف الصفحة -->
     <section class="centered-section">
         <div class="col-md-6" style="background: url('https://img.freepik.com/premium-photo/3d-small-business-modern-store-aigenerated_610906-224.jpg?w=2000') no-repeat center center; background-size: cover;">
             <div style="background-color: #D2B48C; padding: 5px; border-radius: 10px;">
@@ -207,13 +201,10 @@
         </div>
     </section>
 
-    <!-- الفوتر -->
     <footer>
         <p>جميع الحقوق محفوظة &copy; 2025 Craft & Coffee</p>
     </footer>
 
-    <!-- استيراد Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
