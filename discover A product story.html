@@ -25,7 +25,7 @@
         .hero-section {
             background: url('https://th.bing.com/th/id/OIP.cZoDk9ukg5veAyDWURD8xgHaE7?w=626&h=417&rs=1&pid=ImgDetMain') no-repeat center center;
             background-size: cover;
-            height: 300px;
+            height: 500px;
             border-radius: 10px;
             color: white;
             text-align: center;
@@ -36,7 +36,7 @@
         }
 
         .hero-section h1 {
-            font-size: 32px;
+            font-size: 48px;
             font-weight: bold;
         }
 
@@ -110,7 +110,7 @@
         }
 
         .section h2 {
-            font-size: 24px;
+            font-size: 28px;
             color: #4b2e2c;
             text-align: center;
             margin-bottom: 30px;
@@ -118,22 +118,22 @@
         }
 
         .section p {
-            font-size: 16px;
+            font-size: 18px;
             color: #333;
             line-height: 1.6;
             margin-bottom: 30px;
         }
 
+        /* Add styles for product images */
         .product-content {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             gap: 20px;
         }
 
         .product-image {
-            max-width: 100%;
-            height: auto;
+            max-width: 400px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -150,28 +150,91 @@
             margin: 0;
         }
 
-        /* Responsive design for small screens */
+        footer .social-media {
+            margin-top: 10px;
+        }
+
+        footer .social-media a {
+            margin: 0 10px;
+        }
+
+        /* تحسين العرض على الشاشات الصغيرة */
         @media (max-width: 768px) {
             .hero-section h1 {
-                font-size: 24px;
+                font-size: 30px; /* تصغير حجم النص في الهيرو */
+                padding: 0 20px; /* إضافة padding لتحسين العرض */
             }
 
             .cta-button {
-                font-size: 16px;
-                padding: 10px 20px;
-            }
-
-            .section h2 {
-                font-size: 20px;
+                font-size: 16px; /* تقليل حجم النص للأزرار */
+                padding: 10px 20px; /* تقليل padding للأزرار */
+                margin-top: 15px;
             }
 
             .dropdown button {
                 font-size: 18px;
+                padding: 12px;
+            }
+
+            .dropdown-content a {
+                font-size: 16px;
+            }
+
+            .product-content {
+                flex-direction: column;
+                align-items: center; /* تحسين عرض الصور والنصوص على الشاشات الصغيرة */
             }
 
             .product-image {
-                max-width: 80%;
+                max-width: 90%;
+                margin-bottom: 15px;
             }
+
+            footer {
+                padding: 15px;
+                font-size: 14px;
+            }
+
+            footer .social-media {
+                margin-top: 10px;
+            }
+
+            footer .social-media a {
+                margin: 0 10px;
+            }
+        }
+
+        /* تحسين عرض الصور على الشاشات الصغيرة */
+        .product-image {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* تحسين العرض للقائمة المنسدلة */
+        .dropdown-content {
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
@@ -206,7 +269,7 @@
             <p>&copy; 2025 حكاية منتج جميع الحقوق محفوظة</p><br>
 
             <p>تابعنا على لمعرفة المزيد:<p><br>
-            <div>
+            <div class="social-media">
                 <a href="http://www.facebook.com" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40" height="40">
                 </a>
@@ -235,13 +298,13 @@
 
             // Define the story and image for each product
             if (product === 'product1') {
-                storyContent = "حكاية منتج 1: بدأ كفكرة بسيطة بعد عدة محاولات وتجارب، تم تصميم المنتج الذي حقق نجاحًا كبيرًا في السوق.";
+                storyContent = "حكاية منتج 1: بدأ كفكرة بسيطة لتسهيل حياة الناس. بعد عدة محاولات وتجارب، تم تصميم المنتج الذي حقق نجاحًا كبيرًا في السوق.";
                 productImage = "https://c.pxhere.com/photos/d3/46/light_darkness_burns_candles-1032264.jpg!d"; // Example Image for Product 1
             } else if (product === 'product2') {
-                storyContent = "حكاية منتج 2: هذا المنتج متقدم ليواكب احتياجات العصر.";
+                storyContent = "حكاية منتج 2: هذا المنتج كان نتيجة شراكة مع خبراء في المجال التقني، حيث تم تطويره بشكل متقدم ليواكب احتياجات العصر.";
                 productImage = "https://th.bing.com/th/id/OIP.mgTzAkYcm7t31j-j9QEO9wHaLH?w=1000&h=1500&rs=1&pid=ImgDetMain"; // Example Image for Product 2
             } else if (product === 'product3') {
-                storyContent = "حكاية منتج 3: تم تصميم هذا المنتج باستخدام بقايا من حياتنا اليومي .";
+                storyContent = "حكاية منتج 3: تم تصميم هذا المنتج باستخدام مواد مستدامة، وقد تم إطلاقه مع حملة توعية للتقليل من الأثر البيئي.";
                 productImage = "https://th.bing.com/th/id/R.703ae9228effa53da7ad01005648871e?rik=AKGU7CRHzQ7I2Q&riu=http%3a%2f%2fwww.twisted-willows.com%2fwp-content%2fuploads%2f2014%2f09%2f6666046291_e15f7c5eab_z.jpg&ehk=GeN4GZlxQkeOJV2Jjc0gKPA79G%2bWytvHvX01pIWGXH4%3d&risl=&pid=ImgRaw&r=0"; // Example Image for Product 3
             }
 
